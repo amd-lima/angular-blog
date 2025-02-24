@@ -5,8 +5,16 @@ header{
 }
 
 .container_articles{
-  margin-top:30px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   justify-content: center;
+  margin: 50px 50px 10px 50px;
+}
+
+@media (max-width: 925px){
+  .container_articles{
+    grid-template-columns: 1fr;
+    margin: 0 30px;
+    gap: 20px;
+  }
 }
